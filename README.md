@@ -3,7 +3,7 @@
 **Autor:** Adrián Robaina Mejías  
 **Asignatura:** Informática Gráfica — Grado en Ingeniería Informática (ULPGC)  
 **Demo interactiva (CodeSandbox):** [https://codesandbox.io/p/sandbox/ig-s11-forked-ry3mvc](https://codesandbox.io/p/sandbox/ig-s11-forked-ry3mvc)  
-**Vídeo demostrativo (1920x1080):** [Añadir enlace aquí]
+**Vídeo demostrativo (1920x1080):** [https://youtu.be/z5heO98hOuI]
 
 ---
 
