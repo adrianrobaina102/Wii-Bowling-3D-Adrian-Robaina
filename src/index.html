@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bolera 3D</title>
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <div id="pin-diagram">
+      <div class="pin-row">
+        <span class="pin-dot" id="pin-7">7</span>
+        <span class="pin-dot" id="pin-8">8</span>
+        <span class="pin-dot" id="pin-9">9</span>
+        <span class="pin-dot" id="pin-10">10</span>
+      </div>
+      <div class="pin-row">
+        <span class="pin-dot" id="pin-4">4</span>
+        <span class="pin-dot" id="pin-5">5</span>
+        <span class="pin-dot" id="pin-6">6</span>
+      </div>
+      <div class="pin-row">
+        <span class="pin-dot" id="pin-2">2</span>
+        <span class="pin-dot" id="pin-3">3</span>
+      </div>
+      <div class="pin-row">
+        <span class="pin-dot" id="pin-1">1</span>
+      </div>
+    </div>
+
+    <div id="scoreboard-wii">
+      <div id="frames-container"></div>
+    </div>
+
+    <div id="replay-badge" class="hidden">REPLAY</div>
+    <div id="event-banner" class="hidden">STRIKE</div>
+
+    <div id="controls-hint">Clic: lanzar | Espacio: reiniciar</div>
+
+    <script type="module" src="./main.js"></script>
+  </body>
+</html>

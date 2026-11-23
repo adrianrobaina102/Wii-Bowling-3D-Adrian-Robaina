@@ -1,0 +1,190 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  user-select: none;
+}
+
+body {
+  overflow: hidden;
+  font-family: Arial, Helvetica, sans-serif;
+  background: #dcb48a;
+}
+
+/* Diagrama de los 10 bolos */
+#pin-diagram {
+  position: fixed;
+  top: 12px;
+  left: 12px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 4px;
+  z-index: 10;
+  pointer-events: none;
+}
+
+.pin-row {
+  display: flex;
+  gap: 4px;
+}
+
+.pin-dot {
+  width: 22px;
+  height: 22px;
+  border-radius: 50%;
+  background: #ffffff;
+  border: 1.5px solid #333333;
+  color: #222222;
+  font-weight: bold;
+  font-size: 11px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.pin-dot.knocked {
+  background: #555555;
+  color: #aaaaaa;
+  border-color: #333333;
+  opacity: 0.5;
+}
+
+/* Marcador superior derecho */
+#scoreboard-wii {
+  position: fixed;
+  top: 12px;
+  right: 12px;
+  z-index: 10;
+  pointer-events: none;
+}
+
+#frames-container {
+  display: flex;
+  gap: 2px;
+}
+
+.frame-box {
+  width: 50px;
+  background: #222222;
+  border: 1.5px solid #ffffff;
+  color: #ffffff;
+}
+
+.frame-box.active {
+  border-color: #ffd166;
+}
+
+.frame-header {
+  background: #1b5fa8;
+  text-align: center;
+  font-weight: bold;
+  font-size: 12px;
+  padding: 2px 0;
+  border-bottom: 1px solid #ffffff;
+}
+
+.frame-rolls {
+  display: flex;
+  justify-content: flex-end;
+  height: 20px;
+}
+
+.roll-cell {
+  width: 50%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  font-size: 12px;
+}
+
+.roll-cell.second {
+  background: #ffffff;
+  color: #111111;
+  border-left: 1px solid #222222;
+  border-bottom: 1px solid #222222;
+}
+
+.roll-cell.strike {
+  color: #c1121f;
+}
+
+.roll-cell.spare {
+  background: #f4d35e;
+  color: #111111;
+}
+
+.frame-total {
+  height: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+/* Indicador de Replay */
+#replay-badge {
+  position: fixed;
+  bottom: 14px;
+  left: 14px;
+  background: #b91c1c;
+  color: #ffffff;
+  font-weight: bold;
+  font-size: 12px;
+  padding: 4px 8px;
+  z-index: 20;
+  pointer-events: none;
+}
+
+#replay-badge.hidden {
+  display: none;
+}
+
+/* Cartel central de Strike / Spare / Gutter */
+#event-banner {
+  position: fixed;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 48px;
+  font-weight: bold;
+  color: #ffffff;
+  text-shadow: 0 2px 6px rgba(0, 0, 0, 0.7);
+  z-index: 20;
+  pointer-events: none;
+  transition: opacity 0.2s ease;
+}
+
+#event-banner.strike {
+  color: #ffd166;
+}
+
+#event-banner.spare {
+  color: #90e0ef;
+}
+
+#event-banner.gutter {
+  color: #f87171;
+}
+
+#event-banner.hidden {
+  opacity: 0;
+}
+
+/* Texto discreto de controles */
+#controls-hint {
+  position: fixed;
+  bottom: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: rgba(0, 0, 0, 0.55);
+  color: #ffffff;
+  padding: 4px 10px;
+  font-size: 12px;
+  white-space: nowrap;
+  z-index: 10;
+  pointer-events: none;
+}
